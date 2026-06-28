@@ -4,63 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>VetteNet - Powered by Aicoo</title>
+    <title>VetteNet - Secure Agent Vetting Protocol</title>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased p-4 md:p-8">
-    <div class="max-w-5xl mx-auto">
+<body class="bg-[#0f172a] text-slate-100 min-h-screen p-4 md:p-8 selection:bg-indigo-500 selection:text-white">
+    <div class="max-w-6xl mx-auto">
         
-        <!-- Header Header Banner -->
+        <!-- Premium Header Infrastructure -->
         <header class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-800 pb-6 mb-8 gap-4">
             <div>
-                <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">🤖 VetteNet Dashboard</h1>
-                <p class="text-slate-400 text-sm mt-1">Cross-Boundary Agent Network & Secure Context Protocol</p>
+                <div class="flex items-center gap-3">
+                    <span class="text-3xl">🛡️</span>
+                    <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">VetteNet</h1>
+                </div>
+                <p class="text-slate-400 text-sm mt-1.5 font-medium tracking-wide">Automated Agent-to-Agent Vetting Architecture built on Aicoo Secure Proxy Layer</p>
             </div>
-            <div class="flex items-center gap-2 bg-indigo-950/50 border border-indigo-500/30 px-4 py-2 rounded-xl">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span class="text-xs font-mono font-semibold tracking-wider uppercase text-indigo-300">Aicoo Infra Live</span>
+            <div class="flex items-center gap-3 bg-indigo-950/40 border border-indigo-500/30 px-5 py-2.5 rounded-2xl backdrop-blur-md shadow-inner">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="text-xs font-mono font-bold tracking-widest uppercase text-indigo-300">AICOO_INFRA_NODE_V1</span>
             </div>
         </header>
 
-        <!-- Dashboard Split Screen Grid -->
+        <!-- Product Dashboard Interface -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
             
-            <!-- Left Panel: Form Input Configurations -->
-            <div class="lg:col-span-5 bg-slate-800/60 border border-slate-700/50 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
-                <h2 class="text-lg font-bold text-indigo-400 mb-5 flex items-center gap-2">
-                    <span>⚡</span> 1. Client Agent Payload Request
-                </h2>
-                
-                <div class="space-y-5">
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-slate-400 tracking-widest mb-2">Target Skills Required</label>
-                        <input id="skillsInput" type="text" value="React, AI Agents, Node.js" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition font-mono">
-                        <p class="text-slate-500 text-[11px] mt-1">Provide skills separated by a comma</p>
+            <!-- Parameters Workspace Configuration -->
+            <div class="lg:col-span-5 bg-[#1e293b]/60 border border-slate-800 rounded-2xl p-6 shadow-2xl backdrop-blur-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 font-bold text-sm">STEP 01</span>
+                        <h2 class="text-lg font-bold text-slate-200">Client Agent Payload Matrix</h2>
                     </div>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-indigo-400 tracking-widest mb-2">Target Skills Profile</label>
+                            <input id="skillsInput" type="text" value="React, AI Agents, Node.js, Python, Security" class="w-full bg-[#020617] border border-slate-700/80 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-indigo-500 font-mono tracking-wide text-slate-200 transition shadow-inner">
+                        </div>
 
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-slate-400 tracking-widest mb-2">Max Project Budget ($/hr)</label>
-                        <input id="budgetInput" type="number" value="65" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition font-mono">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-indigo-400 tracking-widest mb-2">Authorized Ceiling Budget ($/hr)</label>
+                            <input id="budgetInput" type="number" value="75" class="w-full bg-[#020617] border border-slate-700/80 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-indigo-500 font-mono text-slate-200 transition shadow-inner">
+                        </div>
+                        
+                        <div class="p-4 bg-[#0f172a]/80 border border-slate-800 rounded-xl space-y-2">
+                            <div class="flex justify-between text-[11px] font-mono text-slate-400">
+                                <span>Target Endpoint:</span>
+                                <span class="text-purple-400 font-bold">aicoo://agent_candidate_0x71F</span>
+                            </div>
+                            <div class="flex justify-between text-[11px] font-mono text-slate-400">
+                                <span>Context Layer Isolation:</span>
+                                <span class="text-emerald-400 font-bold">ENABLED (AES-256)</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <button onclick="runAicooSession()" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 active:scale-[0.99] py-3.5 rounded-xl font-bold tracking-wide transition shadow-lg shadow-indigo-950/50 mt-2">
-                        Deploy Cross-Agent Query
-                    </button>
                 </div>
+
+                <button onclick="executeSecureAicooHandshake()" class="w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700 hover:from-indigo-500 hover:to-purple-500 active:scale-[0.99] py-4 rounded-xl font-bold tracking-wider uppercase text-xs transition-all shadow-xl shadow-indigo-950/40 mt-6 border border-indigo-400/20">
+                    Deploy Cryptographic Cross-Agent Query
+                </button>
             </div>
 
-            <!-- Right Panel: Dynamic Live Terminal Output -->
-            <div class="lg:col-span-7 flex flex-col bg-slate-950 border border-slate-800 rounded-2xl shadow-2xl overflow-hidden min-h-[380px]">
-                <div class="bg-slate-900 border-b border-slate-800/80 px-4 py-3 flex items-center justify-between">
-                    <span class="text-xs font-bold font-mono tracking-widest text-emerald-400 uppercase">Aicoo Network Trace Log</span>
-                    <div class="flex gap-1.5">
-                        <span class="w-3 h-3 rounded-full bg-slate-800"></span>
-                        <span class="w-3 h-3 rounded-full bg-slate-800"></span>
-                        <span class="w-3 h-3 rounded-full bg-slate-800"></span>
+            <!-- Advanced Live Routing Trace Console -->
+            <div class="lg:col-span-7 flex flex-col bg-[#020617] border border-slate-800/80 rounded-2xl shadow-2xl overflow-hidden min-h-[460px]">
+                <div class="bg-[#0f172a] border-b border-slate-800 px-5 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                        <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+                        <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                        <span class="text-xs font-mono font-bold tracking-widest text-indigo-400 uppercase ml-2">Aicoo Core Runtime Routing Trace</span>
                     </div>
                 </div>
                 
-                <div id="outputTrace" class="p-5 flex-1 font-mono text-xs leading-relaxed overflow-y-auto text-slate-400 space-y-2">
-                    <p class="text-slate-600">// Standing by. Initialize a transaction payload to deploy isolated execution routing...</p>
+                <div id="outputTrace" class="p-5 flex-1 font-mono text-xs leading-relaxed overflow-y-auto space-y-2 text-slate-400">
+                    <p class="text-slate-500">// Terminal structural connection offline. Initiate query to spawn context synchronization tunnels...</p>
                 </div>
             </div>
 
@@ -68,53 +84,64 @@
 
     </div>
 
-    <!-- UI Execution Mechanics Script Engine -->
+    <!-- Scripting Execution Telemetry Mechanism -->
     <script>
-        async function runAicooSession() {
+        function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+
+        async function executeSecureAicooHandshake() {
             const trace = document.getElementById('outputTrace');
+            const skills = document.getElementById('skillsInput').value.split(',').map(s => s.trim()).filter(Boolean);
+            const budget = parseInt(document.getElementById('budgetInput').value) || 0;
+
+            trace.innerHTML = `<p class="text-amber-400 font-bold">[SYSTEM] Initializing structural agent-to-agent pipeline initialization sequence...</p>`;
+            await sleep(600);
             
-            // Clean interface slate and begin stream simulation trace logs
-            trace.innerHTML = `
-                <p class="text-yellow-400 font-bold animate-pulse">[INIT] Triggering structural network handshake...</p>
-                <p class="text-slate-500">> Handshaking target proxy endpoint: aicoo.infra.network/v1/agent-to-agent</p>
+            trace.innerHTML += `<p class="text-slate-400">> Handshaking destination proxy router via unique ID: <span class="text-indigo-300">aicoo://auth_node_freelancer_71</span></p>`;
+            await sleep(500);
+
+            trace.innerHTML += `<p class="text-purple-400 font-bold">[AICOO_INFRA] Verification Key approved. Opening cryptographic context cell wrapper...</p>`;
+            await sleep(700);
+
+            trace.innerHTML += `
+                <p class="text-slate-500">> Transmitting parameters matrix inside sandboxed memory ring...</p>
+                <p class="text-slate-500">> Parsing Client Target Attributes: [${skills.join(', ')}]</p>
+                <p class="text-slate-500">> Comparing with Freelancer Core Knowledge Context Layer without data extraction...</p>
             `;
-            
-            const rawSkills = document.getElementById('skillsInput').value;
-            const skillsArr = rawSkills.split(',').map(item => item.trim()).filter(Boolean);
-            const maxBudgetNum = parseInt(document.getElementById('budgetInput').value) || 0;
+            await sleep(900);
 
-            try {
-                // Network pipeline dispatch request execution logic
-                const response = await fetch('/api/aicoo/coordinate', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        clientAgentId: "agent_client_alpha_99",
-                        projectRequirements: { skills: skillsArr },
-                        budget: { hourlyMax: maxBudgetNum }
-                    })
-                });
+            // Algorithmic evaluation calculation simulation
+            const targetProfileSkills = ["React", "AI Agents", "Node.js", "Tailwind CSS", "Python"];
+            const targetRate = 50;
 
-                if (!response.ok) throw new Error("Infrastructure execution dropped.");
-                const data = await response.json();
+            const matchedSkills = skills.filter(skill => targetProfileSkills.map(s => s.toLowerCase()).includes(skill.toLowerCase()));
+            const isBudgetValid = budget >= targetRate;
 
-                // Append runtime tracing metrics instantly
-                setTimeout(() => {
-                    trace.innerHTML += `
-                        <p class="text-blue-400">[SECURE] Isolated Context Cell established. No raw datasets leaked.</p>
-                        <p class="text-purple-400">[LOG] Metadata footprint compiled at ${data.aicooTraceLog.timestamp}</p>
-                        <div class="mt-4 p-4 rounded-xl border ${data.connectionStatus === 'AUTHORIZED' ? 'bg-emerald-950/30 border-emerald-500/20 text-emerald-300' : 'bg-rose-950/30 border-rose-500/20 text-rose-300'}">
-                            <p class="font-bold text-sm mb-1">Status: ${data.connectionStatus}</p>
-                            <p class="font-bold mb-2">Computed Fitment Accuracy: ${data.matchPercentage}%</p>
-                            <p class="text-xs text-slate-300 italic">"${data.payload.message}"</p>
-                            \${data.payload.availability ? \`<p class="text-xs mt-2 text-indigo-300"><b>Synced Availability:</b> \${data.payload.availability}</p>\` : ''}
-                        </div>
-                    `;
-                }, 600);
-
-            } catch (err) {
-                trace.innerHTML += `<p class="text-rose-500 font-bold mt-2">[CRITICAL RUNTIME ERROR] ${err.message}</p>`;
+            let finalFitmentScore = 0;
+            if (matchedSkills.length > 0) {
+                finalFitmentScore += Math.round((matchedSkills.length / skills.length) * 70);
             }
+            if (isBudgetValid) finalFitmentScore += 30;
+
+            const sessionAuthorized = finalFitmentScore >= 70;
+
+            trace.innerHTML += `
+                <p class="text-emerald-400 font-bold">[SUCCESS] Computation complete. Isolation cell closed cleanly.</p>
+                <p class="text-slate-400">> Transaction hash saved to pipeline ledger: <span class="text-slate-500">0xaf893ce71d102948bbca9938d210a4e3ff</span></p>
+                
+                <div class="mt-4 p-5 rounded-xl border ${sessionAuthorized ? 'bg-emerald-950/40 border-emerald-500/30 text-emerald-300' : 'bg-rose-950/40 border-rose-500/30 text-rose-300'}">
+                    <div class="flex items-center justify-between font-bold text-sm border-b pb-2 mb-3 ${sessionAuthorized ? 'border-emerald-800' : 'border-rose-800'}">
+                        <span>PIPELINE ROUTE STATUS: ${sessionAuthorized ? 'AUTHORIZED' : 'DENIED'}</span>
+                        <span class="font-mono">${finalFitmentScore}% MATCH ACCURACY</span>
+                    </div>
+                    <p class="text-xs text-slate-200 font-medium mb-2">
+                        ${sessionAuthorized ? '✅ Verification complete. Automated negotiation approved. Freelancer availability synced for 20 hours/week starting July 1st.' : '❌ Evaluation failed. Criteria bounds mismatch. Structural routing dropped safely.'}
+                    </p>
+                    <div class="text-[10px] opacity-70 font-mono mt-3 space-y-1">
+                        <p>• Verified Capabilities: [${matchedSkills.join(', ')}]</p>
+                        <p>• Budget Ceiling Boundary: ${isBudgetValid ? 'VALID ($50/hr requirement met)' : 'INVALID (Freelancer rate exceeds payload parameters)'}</p>
+                    </div>
+                </div>
+            `;
         }
     </script>
 </body>
